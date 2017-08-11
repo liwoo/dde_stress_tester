@@ -6,10 +6,10 @@ const faker = require('faker')
 const async = require('async') 
 const jq = require('node-jq')
 
-const ip = process.args[2]
+const ip = process.argv[2]
 const couch_port = '5984'
 const elastic_port = '9200'
-const target_site_code = process.args[3]
+const target_site_code = process.argv[3]
 const site_code = _.first(_.shuffle(["KCH","MPC","A18","A25"])).toLowerCase()
 const person_db = 'dde_person_' + target_site_code
 const npid_db = 'dde_' + target_site_code
