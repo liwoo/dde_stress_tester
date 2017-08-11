@@ -10,6 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.4",
-    "node-jq": "^0.7.0"
+    "node-jq": "^0.7.0",
+    "faker" : "^4.1.0",
+    "async" : "^2.5.0",
+    "casual" : "^1.5.14",
+    "node-rest-client" : "^3.1.0"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/liwoo/dde_stress_tester.git"
   }
 }
