@@ -143,7 +143,7 @@ for (let i = 0; i<100000; i++) {
 elastic_args['data'].push(elastic_bulk_data.join('\n')+'\n')
 
 const couch_npid = () => { client.post(couch_npid_url, npid_args, (data) => { console.log("Done loading into " + couch_npid_url) }) }
-const couch_person = () => { client.post(couch_person_url, person_args, (data) => { console.log("Done loading into " + couch_person) }) }
+const couch_person = () => { client.post(couch_person_url, person_args, (data) => { console.log("Done loading into " + couch_url) }) }
 const elastic = () => { client.post(elastic_url, elastic_args, (data) => { console.log("Done loading into " + elastic_url) }) }
 
 console.log("Started Bulk Posting...")
