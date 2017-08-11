@@ -1,0 +1,15 @@
+{
+  "name": "dde_stress_test",
+  "version": "1.0.0",
+  "description": "A script to load Dummy DDE Data for Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "J Chienda, F Chiyenda",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "node-jq": "^0.7.0"
+  }
+}
