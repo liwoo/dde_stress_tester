@@ -2,5 +2,6 @@
     "couchHeader" : { "Content-Type" : "application/json" },
     "elasticHeader" : { "Content-Type" : "application/x-ndjson" },
     "couchPort" : 5984,
-    "elasticPort" : 9200
+    "elasticPort" : 9200,
+    "chunks" : 100000
 }
