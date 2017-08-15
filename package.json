@@ -2,21 +2,31 @@
   "name": "dde_stress_test",
   "version": "1.0.0",
   "description": "A script to load Dummy DDE Data for Test",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build"
   },
   "author": "J Chienda, F Chiyenda",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.5.0",
+    "casual": "^1.5.14",
+    "faker": "^4.1.0",
     "lodash": "^4.17.4",
-    "faker" : "^4.1.0",
-    "async" : "^2.5.0",
-    "casual" : "^1.5.14",
-    "node-rest-client" : "^3.1.0"
+    "node-rest-client": "^3.1.0"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/liwoo/dde_stress_tester.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liwoo/dde_stress_tester.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "proxyquire": "^1.8.0",
+    "sinon": "^3.2.0"
   }
 }
