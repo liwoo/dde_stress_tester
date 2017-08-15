@@ -2,7 +2,7 @@
 const dde_generator = require('./dde_generator')
 const db_writer = require('./dde_db_writer')
 
-module.exports = function loader(
+module.exports = function bulk_loader(
     start: number, 
     end: number,
     chunks: number,

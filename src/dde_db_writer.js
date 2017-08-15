@@ -15,7 +15,6 @@ module.exports = function dde_db_writer(
     couch_npid_url: string, 
     couch_person_url: string,
     elastic_url: string) : void {
-
         let npid_args = {
             "data" : {
                 "docs" : npid_fakeData
@@ -34,7 +33,6 @@ module.exports = function dde_db_writer(
             "data" : elastic_fakeData,
             "headers" : elastic_header
         }
-
         const couch_npid = () => { client.post(couch_npid_url, npid_args, (data) => { console.log("Done loading into " + couch_npid_url) }) }
         const couch_person = () => { client.post(couch_person_url, person_args, (data) => { console.log("Done loading into " + couch_person_url) }) }
         const elastic = () => { client.post(elastic_url, elastic_args, (data) => { console.log("Done loading into " + elastic_url) }) }
