@@ -19,4 +19,4 @@ Make sure you all the dependencies listed are installed and working then run the
 3. `node . <ip-address> <Number of Records you want to generate> <The record you want to start with> <Target Site Code>`
 
 ##NOTE:
-You can change the `settings.json` to reflect your prefered options including the number of chuncks you want to be processed at a single time
+You can change the `settings.json` to reflect your prefered options including the number of chunks you want to be processed at a single time
